@@ -22,6 +22,5 @@ jobs:
         with:
           version: latest
 
-      - run: echo "SUPABASE_PROJECT_ID=$SUPABASE_PROJECT_ID"
-      - run: supabase link --project-ref $SUPABASE_PROJECT_ID --debug
+      - run: supabase link --project-ref $SUPABASE_PROJECT_ID
       - run: supabase db push
